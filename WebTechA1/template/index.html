@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist Search</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+    
+    <header>
+        <h1>Artist Search</h1>
+    </header>
+
+
+    <div class="search-container">
+        <div class="search-bar">
+            <img src="/static/images/search_icon.png" alt="Search" class="search-icon" id="searchIcon">
+            <input type="text" id="searchInput" placeholder="Please enter an artist name." required>
+            <img src="/static/images/clear_icon.png" alt="Clear" class="clear-icon" id="clearIcon">
+        </div>
+    </div>
+
+
+    <div class="results-wrapper">
+        <p id="noResults" class="no-results" style="display: none;">No results found.</p>
+
+        <div class="scroll-container">
+            <div id="results" class="results-container"></div>
+        </div>
+    </div>
+
+
+    <div id="loading" class="loading">
+        <img src="/static/images/loading.gif" alt="Loading...">
+    </div>
+        
+   
+    <div id="artist-details">
+        <div id="artist-header">
+            <div class="artist-name">
+                <h2 id="artist-name"></h2>
+            </div>
+            <div class="artist-nationality">
+                <p id="artist-nationality"></p>
+            </div>
+        </div>
+        <div id="artist-biography-container">
+            <p id="artist-biography"></p>
+        </div>
+    </div>
+
+
+    <footer>
+        <a href="https://www.artsy.net" target="_blank">
+            <p>Powered by 
+                <img src="/static/images/artsy_logo.svg" alt="Artsy Logo"> Artsy.
+            </p>
+        </a>
+    </footer>
+    
+
+    <script src="/static/script.js"></script>
+
+</body>
+</html>
